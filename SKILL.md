@@ -6,7 +6,7 @@ description: |
   P2: 진단해줘, 설계해줘, 처방해줘, diagnose, design.
   P3: organizational design, talent pipeline, execution system, culture engineering, change management.
   P5: 진단서로, 설계안으로, .md로.
-  NOT: 사업전략(→biz-skill), 재무모델링(→financial-model), BP(→bp-guide), 투자(→startup-investment), 개인심리(→human-skill), 기획(→planning-skill).
+  NOT: 사업전략(→biz-skill), 재무모델링(→financial-model), BP(→bp-guide), 투자(→investment-skill), 개인심리(→human-skill), 기획(→planning-skill).
 "@uses":
   - references/screening-matrix.md
   - references/report-template.md
@@ -165,15 +165,15 @@ biz-skill이 "시장을 향한 판단(What to do)"이라면, 이 스킬은 **"�
 ---
 
 ## §CONFIRM_GATE
-산출물 송출 직전 형 컨펌 1회. → `paper-engine/references/_common/confirm-gate.md`
+산출물 송출 직전 형 컨펌 1회. → `shaper-skill/references/_common/confirm-gate.md`
 
 
 ## §INV NO_WORK_LABEL
-산출물·대화 작업 라벨 ZERO. → `paper-engine/references/no-work-label.md`
+산출물·대화 작업 라벨 ZERO. → `shaper-skill/references/no-work-label.md`
 
 
-## 🚨 MUST cascade → paper-engine
-모든 산출물 paper-engine MUST 경유. → `paper-engine/references/_common/cascade-must.md`
+## 🚨 MUST cascade → shaper-skill
+모든 산출물 shaper-skill MUST 경유. → `shaper-skill/references/_common/cascade-must.md`
 
 
 ## Gotchas
