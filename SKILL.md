@@ -17,7 +17,28 @@ description: |
 biz-skill이 "시장을 향한 판단(What to do)"이라면, 이 스킬은 **"조직을 굴리는 메커니즘(How to run)"**.
 전략이 맞아도 조직 운영이 틀리면 90%가 실패한다(HBS Kaplan). 이 스킬은 그 90%를 막는다.
 
+
+## Skill Boundaries
+
+- **하는 것** — 6축×6규모 조직운영 엔진.
+- **안 하는 것** — 사업전략(→biz-skill), 재무모델링(→financial-model), BP(→bp-guide), 투자(→investment-skill), 개인심리(→human-skill), 기획(→planning-skill).
+
 ---
+
+## When to Use
+
+- 사용자가 "진단해줘", "설계해줘", "처방해줘", "diagnose", "design." 같은 표현으로 발동
+- 도메인 작업이 필요한 시점
+- **안 쓸 때** — 사업전략(→biz-skill), 재무모델링(→financial-model), BP(→bp-guide), 투자(→investment-skill), 개인심리(→human-skill), 기획(→planning-skill).
+
+
+## Prerequisites
+
+| # | 체크 | 미충족 시 |
+|---|------|-----------|
+| 1 | 대상·입력 명확 (스킬 발동 의도 확인) | 1줄 확인 후 진입 |
+| 2 | references/ 폴더 접근 가능 | inline fallback |
+
 
 ## ⛔ 절대 규칙
 
@@ -176,7 +197,39 @@ biz-skill이 "시장을 향한 판단(What to do)"이라면, 이 스킬은 **"�
 모든 산출물 shaper-skill MUST 경유. → `shaper-skill/references/_common/cascade-must.md`
 
 
-## Gotchas
+## Output Path
+
+| 산출물 | 경로 |
+|---|---|
+| 주 산출물 | `mnt/outputs/management-skill_{topic}_{YYYY-MM-DD}.md` |
+| 형식 | 진단서로, 설계안으로, .md로. |
+| 리서치 결과 (해당 시) | `{VAULT}/_skills research/management-skill/{YYYY-MM-DD}_{topic}.md` |
+
+## Reference Index
+
+| 파일 | 내용 | 언제 |
+|---|---|---|
+| `references/m1-org-design.md` | m1 org design | 해당 단계 진입 시 |
+| `references/m2-talent.md` | m2 talent | 해당 단계 진입 시 |
+| `references/m3-execution.md` | m3 execution | 해당 단계 진입 시 |
+| `references/m4-culture.md` | m4 culture | 해당 단계 진입 시 |
+| `references/m5-operating-finance.md` | m5 operating finance | 해당 단계 진입 시 |
+| `references/m6-crisis-transition.md` | m6 crisis transition | 해당 단계 진입 시 |
+| `references/report-template.md` | report template | 해당 단계 진입 시 |
+| `references/screening-matrix.md` | screening matrix | 해당 단계 진입 시 |
+
+
+## Next Phase
+
+본 스킬 작업 후 자연스럽게 이어지는 흐름:
+
+- 후속 작업 → `biz-skill`
+- 후속 작업 → `financial-model`
+- 후속 작업 → `bp-guide`
+- 후속 작업 → `investment-skill`
+- 후속 작업 → `human-skill`
+
+## Failure Modes (Gotchas)
 
 | 함정 | 대응 |
 |---|---|
@@ -186,3 +239,11 @@ biz-skill이 "시장을 향한 판단(What to do)"이라면, 이 스킬은 **"�
 | human-skill과 중첩 | 경영스킬은 "조직 레벨 패턴", human-skill은 "개인 행동 메커니즘". 겹치면 human-skill 위임 |
 | 전 축 나열 | 스크리닝 후 핵심 축만. 6축 전부 나열하면 판단 불가 |
 | 리모트/하이브리드 | M3(실행시스템) + M4(문화) spoke에서 리모트 패턴 별도 명시. 미커버 영역은 "확인필요" 태그 |
+
+
+## ❌ WRONG vs ✅ CORRECT
+
+```
+❌ WRONG: 트리거 단어만 보고 발동 — 본질·범위 확인 ✗ → 오발동·범위 이탈
+✅ CORRECT: Skill Boundaries·When to Use 확인 후 발동 → 본질 작업만 수행
+```
