@@ -1,5 +1,6 @@
 ---
 name: management-skill
+version: 1.0
 description: |
   6축×6규모 조직운영 엔진. 조직설계·인재·실행·문화·재무·위기를 규모별 패턴으로 진단·설계·처방. 트리거: 경영스킬, management skill, 조직운영, 조직설계, 인재관리, 실행시스템, 문화엔지니어링, 운영재무, 위기관리, 성장통, OKR설계, 채용전략, 조직건강, 진단해줘, 설계해줘, 처방해줘, diagnose, design. NOT: 사업전략(→biz-skill), 재무모델링(→financial-model), BP(→bp-guide), 투자(→investment-skill), 개인심리(→human-skill), 기획(→planning-skill).
 ---
